@@ -1,0 +1,45 @@
+@import '../../setup/styles/color.scss';
+.sidebar-wrap{
+    background: $background-color;
+    .sidebar{
+        font-family: 'Avenir';
+        padding: 20px 15px;
+            height: 75vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        &__title {
+            color: $fontcolorLight;
+            margin-bottom: 10px;
+            font-size: 16px;
+            padding-left: 15px;
+            &_sub{
+                color: $fontcolorDark;
+                font-size: 16px;
+                padding-left: 15px;
+            }
+        }
+        &__link{
+            cursor: pointer;
+            border-top: 1px solid $gray;
+            padding: 10px 15px;
+            list-style: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        &__link:last-child{
+            border-bottom: 1px solid $gray;
+        }
+        .linkYellow{
+            color: $yellow;
+        }
+        .linkRed {
+            color: $red;
+        }
+        .linkGreen {
+            color: $green;
+        }
+        .linkViolet {
+            color: $violet;
+        }
+    }
+}

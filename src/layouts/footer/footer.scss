@@ -1,0 +1,119 @@
+@import '../../setup/styles/color.scss';
+
+.footer{
+    background: $gray;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111;
+    padding: 0px 5px;
+    label{
+        font-size: 12px;
+        padding-top: 14px;
+            color: $fontcolorDark;
+    }
+    select {
+        background: transparent;
+        padding: 2px 0px;
+        height: auto !important;
+        line-height: 0;
+        border-radius: 0px;
+        border: 0px;
+        border-bottom: 1px solid $fontcolorDark;
+        text-align: center !important;
+        padding-left: 15px;
+        color: $highlight;
+    }
+    &__section:first-child {
+            border-left: 5px solid $gray;
+            padding-top: 40px;
+    }
+    &__section:last-child {
+            border-right: 5px solid $gray;
+    }
+    &__section {
+        vertical-align: middle;
+        padding: 23px 15px;
+        background: $background-color;
+        border: 5px solid $gray;
+        border-right: 1px solid $gray;
+        border-left: 5px solid $gray;
+        height: 90px;
+        padding-bottom: 0px;
+        float: left;
+        width: 37.5%;
+        &.short_section{
+            width: 12.5%;
+        }
+        .form-group {
+             margin-bottom: 0px; 
+        }
+        .css-vj8t7z {
+            background-color: transparent;
+            border-color: $fontcolorDark;
+            border-radius: 0px;
+            border-style: solid;
+            border-width: 0 0 2px 0;
+            cursor: pointer;
+        }
+        .css-10nd86i {
+            margin-top: 6px;
+        }
+        .css-vj8t7z{
+            min-height: unset;
+            height: 24px;
+        }
+        .css-1492t68{
+            color: $highlight;
+                font-size: 12px;
+        }
+        .css-d8oujb {
+           display: none;
+        }
+        .css-15k3avv{
+            top: -130px;
+        }
+        .css-2o5izw {
+            background-color: transparent !important;
+            border-width: 0 0 2px 0;
+            box-shadow: unset !important;
+            border-radius: 0px;
+            border-color: $fontcolorDark;
+        }
+        .css-xp4uvy {
+            color: $highlight;
+        }
+        
+
+        li {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            list-style: none;
+            padding: 15px 0px;
+            padding-top: 10px;
+             a:hover {
+                color: $highlight;
+                text-decoration: none;
+            }
+            a {
+                color: #fff;
+            }
+        }
+    }
+    .input-range{
+        &__slider{
+                background: $highlight;
+                border: 1px solid $highlight;
+                    width: 12px !important;
+                    height: 12px !important;
+        }
+        &__track--active {
+            background: $highlight;
+        }
+        &__label-container{
+            line-height: 2px;
+        }
+    }
+}
